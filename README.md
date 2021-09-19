@@ -26,7 +26,8 @@ You can easily configure it in LAMP, MAMP. WAMP, or XAMPP. Just mention us in th
 
 - PHP 5.3+
 - Apache2
-- cURL (optional)
+- mod_rewrite.c
+- cURL
 
 # Additional Requirements
 
