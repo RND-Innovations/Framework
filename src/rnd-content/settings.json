@@ -1,0 +1,234 @@
+{
+    "site_name": "My Website",
+    "site_tag": "This website is developed using RND Framework.",
+    "site_url": "https://www.my-website.com",
+    "site_phone": "+1333666999",
+    "site_email": "me@my-website.com",
+    "site_engine_version": "2.0.3",
+    "site_template_name": "bootstrap5",
+    
+    "seo_title": "This is my first RND Website!",
+    "seo_description": "This website is developed using RND Framework. You can easily customize this website by reading official documentation at: https://www.rndvn.com/docs/",
+    "seo_keywords": "rnd website, my first website",
+    
+    "site_menu": {
+        "_top": {
+            "Home": {
+                "href": "home",
+                "icon": "home",
+                "new": "0",
+                "items": {}    
+
+            },        
+            "Hello RND": {
+                "href": "hello",
+                "icon": "",
+                "new": "0",
+                "items": {}    
+
+            },
+            "Page Elements": {
+                "href": "elements",
+                "icon": "",
+                "new": "0",
+                "items": {
+                    "Basics": {
+                        "href": "elements/basics",
+                        "icon": "",
+                        "new": "0",
+                        "items": {}    
+
+                    },
+                    "Typography": {
+                        "href": "elements/typo",
+                        "icon": "",
+                        "new": "0",
+                        "items": {}    
+
+                    }, 
+                    "Colours": {
+                        "href": "elements/colors",
+                        "icon": "",
+                        "new": "0",
+                        "items": {}    
+
+                    },
+                    "Images": {
+                        "href": "elements/images",
+                        "icon": "",
+                        "new": "0",
+                        "items": {}    
+
+                    },
+                    "Panels & Boxes": {
+                        "href": "elements/panels",
+                        "icon": "",
+                        "new": "0",
+                        "items": {}    
+
+                    },
+                    "Forms & Inputs": {
+                        "href": "elements/forms",
+                        "icon": "",
+                        "new": "0",
+                        "items": {}    
+
+                    },
+                    "Tables": {
+                        "href": "elements/tables",
+                        "icon": "",
+                        "new": "0",
+                        "items": {}    
+
+                    },
+                    "Animations": {
+                        "href": "elements/animate",
+                        "icon": "",
+                        "new": "0",
+                        "items": {}    
+
+                    }      
+                }    
+            }, 
+            "Documentation": {
+                "href": "docs",
+                "icon": "",
+                "new": "0",
+                "items": {
+                    "Start Editing": {
+                        "href": "https://www.rndvn.com/docs/start",
+                        "icon": "",
+                        "new": "1",
+                        "items": {}    
+
+                    },
+                    "System Hooks": {
+                        "href": "https://www.rndvn.com/docs/hooks",
+                        "icon": "",
+                        "new": "1",
+                        "items": {}    
+
+                    }, 
+                    "Page Layouts": {
+                        "href": "https://www.rndvn.com/docs/layouts",
+                        "icon": "",
+                        "new": "1",
+                        "items": {}    
+
+                    },
+                    "Change Template": {
+                        "href": "https://www.rndvn.com/docs/templates",
+                        "icon": "",
+                        "new": "1",
+                        "items": {}    
+
+                    },
+                    "Add Plugins": {
+                        "href": "https://www.rndvn.com/docs/plugins",
+                        "icon": "",
+                        "new": "1",
+                        "items": {}    
+
+                    },
+                    "Cloud Database": {
+                        "href": "https://www.rndvn.com/docs/cloud",
+                        "icon": "",
+                        "new": "1",
+                        "items": {}    
+
+                    }     
+                }    
+            },             
+            "Help": {
+                "href": "help",
+                "icon": "",
+                "new": "0",
+                "items": {}    
+
+            }
+
+        },
+        "_side": {
+            "Basics": {
+                "href": "elements/basics",
+                "icon": "",
+                "new": "0",
+                "items": {}    
+
+            },
+            "Typography": {
+                "href": "elements/typo",
+                "icon": "",
+                "new": "0",
+                "items": {}    
+
+            }, 
+            "Colours": {
+                "href": "elements/colors",
+                "icon": "",
+                "new": "0",
+                "items": {}    
+
+            },
+            "Images": {
+                "href": "elements/images",
+                "icon": "",
+                "new": "0",
+                "items": {}    
+
+            },
+            "Panels & Boxes": {
+                "href": "elements/panels",
+                "icon": "",
+                "new": "0",
+                "items": {}    
+
+            },
+            "Forms & Inputs": {
+                "href": "elements/forms",
+                "icon": "",
+                "new": "0",
+                "items": {}    
+
+            },
+            "Tables": {
+                "href": "elements/tables",
+                "icon": "",
+                "new": "0",
+                "items": {}    
+
+            },
+            "Animations": {
+                "href": "elements/animate",
+                "icon": "",
+                "new": "0",
+                "items": {}    
+
+            } 
+        },
+        "_footer": {
+            "Home": {
+                "href": "home",
+                "icon": "",
+                "new": "0",
+                "items": {}    
+
+            }, 
+            "Legal": {
+                "href": "legal",
+                "icon": "",
+                "new": "0",
+                "items": {}    
+
+            },        
+            "Help": {
+                "href": "help",
+                "icon": "",
+                "new": "0",
+                "items": {}    
+
+            }
+        }
+    },    
+    "external": {}
+}
