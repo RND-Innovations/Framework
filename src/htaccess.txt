@@ -1,0 +1,28 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+	
+	# Uncomment below to redirect NON-WWW to WWW
+    	#RewriteCond %{HTTP_HOST} !^www\. [NC]
+    	#RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+	# Uncomment below to keep SSL ON for whole site.
+    	#RewriteCond %{HTTPS} !=on
+    	#RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+ 
+	# Please DO NOT edit below.
+	RewriteRule ^index\.php$ - [L]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+
+	# For root installations.
+	RewriteRule . index.php [L]
+
+	# If you host files in a subfolder, comment above line.
+	# Uncomment below line and change "host-path" with your subfolder name.
+	#RewriteRule . host-path/index.php [L]
+
+	# NOTE: You have to rename this file as ".htaccess" to run your site.
+	# Please note that "." files will be hidden. May need restarting apache also.
+	# Visit: https://www.rndvn.com/framework and get more support.
+</IfModule>
