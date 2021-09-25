@@ -1,0 +1,31 @@
+/*
+Theme Name: Materialize1
+Theme URI: 
+Author: 
+Author URI: 
+Description: A fully flexible template based on MaterializeCSS.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: rnd, basic, 2021
+Text Domain: 
+
+This theme is licensed under the GPL.
+It is desgined by following https://materializecss.com/about.html
+Materialize Version 1.0
+*/
+
+
+.text-center{
+    text-align:center;
+}
+
+.bg-rnd {
+    background-color: #4797fc;
+    background-image: linear-gradient(45deg, rgba(71, 151, 236, 0), #8bc34a 80%);
+    background-size: auto, auto;
+    background-repeat: repeat, no-repeat;
+    box-shadow: 0 0.5rem 1.75rem 0 rgb(0 0 0 / 25%);
+    color: #ffffff !important; 
+    font-size: 100%;
+}
