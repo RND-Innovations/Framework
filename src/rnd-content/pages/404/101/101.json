@@ -1,0 +1,14 @@
+{
+    "head": {
+        "title":"Service Error: Forgot to plug a cable!",
+        "text":"It means our service is interrupted by something or someone.",
+        "keys": "101 error",
+        "short": "101",
+        "layout": "default"
+    },
+    "body":{
+        "title":"Service Error: Forgot to plug a cable!",
+        "text":"It means our service is interrupted by something or someone.",    
+        "label":"Restart"
+    }
+}

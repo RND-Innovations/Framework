@@ -1,0 +1,9 @@
+.slide-images {display:none}
+.rnd-left, .rnd-right, .rnd-badge {cursor:pointer}
+.rnd-badge {height:13px;width:13px;padding:7px !important;margin:3px;}
+
+.rnd-text-trim {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   height:120px;
+}

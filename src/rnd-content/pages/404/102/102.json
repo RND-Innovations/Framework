@@ -1,0 +1,14 @@
+{
+    "head": {
+        "title":"Service Error: A mouse cut the cable!",
+        "text":"It means our service is interrupted by something or someone.",
+        "keys": "102 error",
+        "short": "102",
+        "layout": "default"
+    },
+    "body":{
+        "title":"Service Error: A mouse cut the cable!",
+        "text":"It means our service is interrupted by something or someone.",   
+        "label":"Restart"
+    }
+}

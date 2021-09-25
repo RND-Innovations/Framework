@@ -1,0 +1,12 @@
+{
+    "head": {
+        "title": "Help & Support",
+        "text": "RND Framework - Help & Support",
+        "keys": "help",
+        "short": "Help",
+        "layout": "default"
+    },
+    "body": {},
+    "style": {},
+    "script": {}
+}

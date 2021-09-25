@@ -1,0 +1,83 @@
+{
+    "head": {
+        "title": "Welcome to my first RND Website!",
+        "text": "This website is developed using RND Framework. I can easily customize this website by reading official documentation at: https://www.rndvn.com/docs/",
+        "keys": "rnd framework, my website",
+        "short": "Home",
+        "layout": "home-page"
+    },
+    "body": {
+        "header-banner": {
+            "layout": "header-banner",
+            "title": "Welcome to my first RND Website!",
+            "text": "RND Framework is new but comes with a lot of hidden features. It is really easy to develop my websites after learning documentation.",
+            "href": "hello",
+            "button": "Learn More"
+        },
+        "slideshow": {
+            "layout": "slideshow",
+            "slideshow-image1": {
+                "layout": "slideshow-image",
+                "src": "[[MEDIA_URL]]/gallery/hills.jpg"
+            },
+            "slideshow-image2": {
+                "layout": "slideshow-image",
+                "src": "[[MEDIA_URL]]/gallery/nature.jpg"
+            },
+            "slideshow-image3": {
+                "layout": "slideshow-image",
+                "src": "[[MEDIA_URL]]/gallery/snow.jpg"
+            },
+            "slideshow-span1": {
+                "layout": "slideshow-span",
+                "id": "1"
+            },
+            "slideshow-span2": {
+                "layout": "slideshow-span",
+                "id": "2"
+            },
+            "slideshow-span3": {
+                "layout": "slideshow-span",
+                "id": "3"
+            }
+        },
+        "featured-list": {
+            "title": "Global Warming is a huge problem",
+            "text": "We are living on a planet which is burning. RND Framework helps you to build websites for free, but as a return, we asked you to do everything to protect our earth.",            
+            "layout": "featured-list",
+            "featured-item1": {
+                "layout": "featured-item",
+                "img-src": "[[MEDIA_URL]]/gallery/hills.jpg",
+                "title": "Drinking Water Issue",
+                "top-text": "Water Pollution",
+                "date": "July 31, 2021",
+                "text": "Do not throw garbage into rivers, oceans, lakes, and whatever keeps natural water.",
+                "link-href": "#",
+                "link-text": "Read More"
+            },
+            "featured-item2": {
+                "layout": "featured-item",
+                "img-src": "[[MEDIA_URL]]/gallery/snow.jpg",
+                "title": "Save Glaciers",
+                "top-text": "Air Pollution",
+                "date": "May 12, 1987",
+                "text": "Releasing CO2 gas can skyrocket the air pollution and melt down glaciers in polar regions.",
+                "link-href": "#",
+                "link-text": "Read More"
+            },
+            "featured-item3": {
+                "layout": "featured-item",
+                "img-src": "[[MEDIA_URL]]/gallery/nature.jpg",
+                "title": "Grow More Trees",
+                "top-text": "Air Pollution",
+                "date": "January 21, 1998",
+                "text": "Humans cut a lot of trees every hour. Just grow at least 1 tree per year.",
+                "link-href": "#",
+                "link-text": "Read More"
+            }
+        }
+    },
+    "script": {
+        "css-import-url": "[[SITE_URL]]/rnd-content/layouts/default/default.css"
+    }
+}

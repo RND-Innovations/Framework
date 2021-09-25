@@ -1,0 +1,12 @@
+{
+    "head": {
+        "title": "Hello RND Framework!",
+        "text": "RND Framework is created by RND Innovations CO. LTD, Vietnam with the help of Rodee Web Design & Services, Canada.",
+        "keys": "hello rnd",
+        "short": "Hello",
+        "layout": "default"
+    },
+    "body": {},
+    "style": {},
+    "script": {}
+}

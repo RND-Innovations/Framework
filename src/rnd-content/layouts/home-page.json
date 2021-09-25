@@ -1,0 +1,47 @@
+{
+    "head": {
+        "title": "[[TITLE]]",
+        "text": "[[TEXT]]",
+        "keys": "[[KEYWORDS]]",
+        "short": "[[SHORT]]",
+        "layout": "home-page"
+    },
+    "body": {
+        "header-banner": {
+            "layout": "header-banner",
+            "title": "[[TITLE]]",
+            "text": "[[TEXT]]",
+            "href": "[[HREF]]",
+            "button": "[[BUTTON]]"
+        },
+        "slideshow": {
+            "layout": "slideshow",
+            "slideshow-image": {
+                "layout": "slideshow-image",
+                "src": "[[SRC]]"
+            },
+            "slideshow-span": {
+                "layout": "slideshow-span",
+                "id": "[[ID]]"
+            }
+        },
+        "featured-list": {
+            "title": "[[TITLE]]",
+            "text": "[[TEXT]]",
+            "layout": "featured-list",
+            "featured-item": {
+                "layout": "featured-item",
+                "img-src": "[[IMG-SRC]]",
+                "title": "[[TITLE]]",
+                "top-text": "[[TOP-TEXT]]",
+                "date": "[[DATE]]",
+                "text": "[[TEXT]]",
+                "link-href": "[[LINK-HREF]]",
+                "link-text": "[[LINK-TEXT]]"
+            }
+        }
+    },
+    "script": {
+        "css-import-url": "[[CSS-IMPORT-URL]]"
+    }
+}

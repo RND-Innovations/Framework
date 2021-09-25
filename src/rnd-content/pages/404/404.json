@@ -1,0 +1,14 @@
+{
+    "head": {
+        "title":"404 - Page Not Found!",
+        "text":"The page you are looking for is not available or removed by our team.",
+        "keys": "404 error",
+        "short": "404",
+        "layout": "default"
+    },
+    "body":{
+        "title":"404 - Page Not Found!",
+        "text":"The page you are looking for is not available or removed by our team.",    
+        "label":"Go to home page"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "head": {
+        "title": "[[TITLE]]",
+        "text": "[[TEXT]]",
+        "keys": "[[KEYWORDS]]",
+        "short": "[[SHORT]]",
+        "layout": "default"
+    },
+    "body": {
+        "title": "[[TITLE]]",
+        "text": "[[TEXT]]",
+        "label": "[[LABEL]]"
+    }
+}
