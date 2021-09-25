@@ -28,7 +28,7 @@
     // SPECIAL NOTE: 
     // If you host in a subfolder, while there is a ".htaccess" file in the root,
     // It can affect the site. We advise you to keep the site in the root always.
-    define("HOST_PATH", "/RND" );
+    define("HOST_PATH", "/MyWebsite" );
 
     // If you want to move "rnd-content" and "rnd-engine" folders to a sub-folder,
     // Add the folder name down here. This helps you to backup all data quickly.
@@ -42,16 +42,16 @@
 //      For special products, API access can be purchased from : https://www.rndvn.com/
 
     // The url where API will be linked with
-    define("API_URL", 'http://localhost:8888/AM/api/v3' );
+    define("API_URL", '' );
 
     // API User ID (Use "0" for free usage). 
     define("API_USER", '0' ); 
 
     // API Login Key (Leave it empty for free usage).
-    define("API_KEY", 'Asdf48rgDD44f8115' );
+    define("API_KEY", '' );
 
     // API Login Password (Leave it empty for free usage).
-    define("API_PASS", 'Asdf48rgDD44f1195' );
+    define("API_PASS", '' );
 
 
 
