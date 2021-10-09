@@ -1,5 +1,5 @@
 # RND Framework - Engine Version 2.0.3
-![#30fc15](https://www.rndvn.com/docs/) `Official Documentation`
+![#30fc15](https://www.rndvn.com/docs/) `#30fc15`
 ![alt text](https://www.rndvn.com/rnd-content/uploads/gallery/framework.png)
 
 # Build Your Website Quickly!
