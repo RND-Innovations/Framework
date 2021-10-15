@@ -3,6 +3,7 @@
 /**************************************/
 /* Developed By : Priyankara Dilantha */
 /* Contact Me 	: www.dilantha.org ****/
+/* Updated 	    : 2021-10-15       ****/
 /**************************************/
 
 
@@ -22,21 +23,28 @@ $rnd_site_settings_json = get_json_data( APP_TMPL_URL . '/settings.json' );
     } 
 
 
-// Site Name
-/*function register_rnd_site_name($items) {
-    global $rnd_site_settings_json;
-    return $rnd_site_settings_json["site_name"];
-}
-add_filter('site_name', 'register_rnd_site_name');*/
 
-foreach($rnd_site_settings_json as $name=>$value){
-    if(!is_array($value)){
-        
+    /*
+    @Removed: 2021-10-15
+    foreach($rnd_site_settings_json as $name=>$value){
+        if(!is_array($value)){
+
+            $define   = strtoupper($name);
+
+            if(!defined($define)) {
+                define($define, $value );
+            } 
+
+        }
+    }
+    */
+
+    foreach($rnd_site_settings_json as $name=>$value){
+
         $define   = strtoupper($name);
-        
+
         if(!defined($define)) {
             define($define, $value );
         } 
-        
+
     }
-}
