@@ -3,6 +3,7 @@
 /**************************************/
 /* Developed By : Priyankara Dilantha */
 /* Contact Me 	: www.dilantha.org ****/
+/* Updated 	    : 2021-10-19       ****/
 /**************************************/
 
 class am_site{
@@ -259,10 +260,12 @@ class am_site{
      
     public function render(){
         
-        if(defined('RND_HTTP_HEADER')) {
-            header(RND_HTTP_HEADER); // Let third parties manupulate http header can manipulate
-        }else{
-            header('Content-Type: text/html; charset=utf-8');
+        // Updated: 2021-10-19
+        $headers = get_filter('http_headers', '');
+        if(is_array($headers) && count($headers)>0){
+            foreach($headers as $k=>$v){
+                header($v);
+            }   
         }     
         
         get_action('menu_renderer');

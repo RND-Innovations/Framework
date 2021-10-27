@@ -3,6 +3,7 @@
 /**************************************/
 /* Developed By : Priyankara Dilantha */
 /* Contact Me 	: www.dilantha.org ****/
+/* Updated 	    : 2021-10-19       ****/
 /**************************************/
 
 class am_app{
@@ -67,17 +68,38 @@ class am_app{
                 $fn = APP_TMPL . "/" . $this->pages_dir . "/" . $dir_parent . $dir_name . "/" . $dir_name . ".json";
 
                 if(!file_exists($fn)){
+                    
                     // We need all Json files in the path
-                    // If missing, show 404 error
-                    header("HTTP/1.0 404 Not Found");
+                    // If any missing, show 404 error page
                     $this->page->load_json( APP_TMPL . "/" . $this->pages_dir . "/404/404.json" );
+                    
+                    // We also set HTTP Header filter to hook 404 error.
+                    // Updated: 2021-10-19
+                    if (!function_exists('set_rnd_http_header_404')) {
+                        function set_rnd_http_header_404($items){
+                            $items  = (!is_array($items) ? array() : $items);
+                            return $items + array("404"=>"HTTP/1.0 404 Not Found");
+                        }
+                        add_filter('http_headers', 'set_rnd_http_header_404');      
+                    }
+   
+                    
                 }else{
                     $this->page->load_json( $fn );
                 }
                 $dir_parent .= $dir_name . "/";
             }
-        } 
+        }
+        
+        // We set content type for page loads.
+        function set_rnd_http_header_content_type($items){
+            $items  = (!is_array($items) ? array() : $items);
+            return $items + array("content"=>"Content-Type: text/html; charset=utf-8");
+        }
+        add_filter('http_headers', 'set_rnd_http_header_content_type'); 
+        
     } 
+    
     
     function init() {
                
@@ -124,6 +146,8 @@ class am_app{
         
     }    
     
+       
+       
     function render() {
         // Return App All Elemants 
         return $this->reply_arr;
@@ -331,6 +355,7 @@ class am_app{
     }
     */
     
+    
     private function handle_update(){
         
         // Get submitted data on the form
@@ -397,7 +422,7 @@ class am_app{
         // This call all index.php on the path. (ex: user/login/confirm --- 3 index.php)
         $this->include_all();
         
-
+        
         // Post object to communicate with server
         $connector = new am_connector( $this->core, $this, array(), "load" );
 
