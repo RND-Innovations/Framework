@@ -3,12 +3,13 @@
 /**************************************/
 /* Developed By : Priyankara Dilantha */
 /* Contact Me 	: www.dilantha.org ****/
-/* Updated 	    : 2021-10-15       ****/
+/* Updated 	    : 2023-03-20       ****/
 /**************************************/
 
 
 // This variable will be used to store site settings in json file
-$rnd_site_settings_json = get_json_data( APP_TMPL_URL . '/settings.json' );
+// Will use APP_TMPL rather than APP_TMPL_URL (Avoid curl HTTP)
+$rnd_site_settings_json = get_json_data( APP_TMPL . '/settings.json' );
 
 
     // Need this contastant to access theme via "https://.." link
