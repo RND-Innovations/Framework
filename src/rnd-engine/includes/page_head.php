@@ -5,6 +5,11 @@
 /* Contact Me 	: www.dilantha.org ****/
 /**************************************/
 
+// Define NONCE for Content Security Headers
+if(!defined('RND_NONCE_STYLE')) {
+    define("RND_NONCE_STYLE", bin2hex(random_bytes(16)) );
+}
+ 
 
 function bind_page_default_head($items) {
 
@@ -26,7 +31,7 @@ function print_page_head_items() {
     echo '<head>';
     echo get_filter('page_head',"");
     
-        echo '<style>';
+        echo '<style nonce="'.RND_NONCE_STYLE.'">';
             echo get_filter('page_style',"");
         echo '</style>';
     

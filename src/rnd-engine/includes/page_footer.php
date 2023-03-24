@@ -5,6 +5,11 @@
 /* Contact Me 	: www.dilantha.org ****/
 /**************************************/
 
+// Define NONCE for Content Security Headers
+if(!defined('RND_NONCE_SCRIPT')) {
+    define("RND_NONCE_SCRIPT", bin2hex(random_bytes(16)) );
+}
+
 function bind_page_default_footer($items) {
 
     global $page_data;
@@ -36,7 +41,7 @@ function clean_footer(){
 function print_page_footer_items() {
     echo get_filter('page_footer',"");
     
-    echo '<script>';
+    echo '<script nonce="'.RND_NONCE_SCRIPT.'">';
         echo get_filter('page_script',"");
     echo '</script>';    
 }
