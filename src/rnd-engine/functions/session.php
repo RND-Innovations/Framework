@@ -3,7 +3,7 @@
 /**************************************/
 /* Developed By : Priyankara Dilantha */
 /* Contact Me 	: www.dilantha.org ****/
-/* Updated 	    : 2023-03-20       ****/
+/* Updated 	    : 2023-09-25       ****/
 /**************************************/
 
 
@@ -25,7 +25,12 @@
         if(strpos(HOST_URL, 'http://') === false){
             
             // Redirect to SSL Mode
-            $location = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+            if(isset($_SERVER['HTTP_HOST']) && isset($_SERVER['REQUEST_URI'])){
+                $location = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+            }else{
+                $location = HOST_URL;
+            }
+            
             header('HTTP/1.1 301 Moved Permanently');
             header('Location: ' . $location);
             exit;    
